@@ -3,5 +3,6 @@ class Flight < ApplicationRecord
   validates_presence_of :date
   validates_presence_of :time
   validates_presence_of :departure_city
-  validates_presence_of :arrival_city 
+  validates_presence_of :arrival_city
+  belongs_to :airline 
 end

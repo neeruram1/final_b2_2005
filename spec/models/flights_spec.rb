@@ -8,4 +8,8 @@ RSpec.describe Flight, type: :model do
     it {should validate_presence_of :arrival_city}
     it {should validate_presence_of :departure_city}
   end
+
+  describe 'Relationships' do
+    it {should belong_to :airline}
+  end
 end
