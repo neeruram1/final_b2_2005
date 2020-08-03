@@ -21,8 +21,9 @@ RSpec.describe 'Flight show page' do
     expect(page).to have_content("Arrival City: #{@flight_1.arrival_city}")
   end
 
-  xit "I see the name of the airline this flight belongs to" do
-
+  it "I see the name of the airline this flight belongs to" do
+    visit "/flights/#{@flight_1.id}"
+    expect(page).to have_content(@delta.name)
   end
 
   xit "I see the names of all the passengers on this flight" do
