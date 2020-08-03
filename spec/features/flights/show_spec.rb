@@ -16,7 +16,7 @@ RSpec.describe 'Flight show page' do
   end
 
   it "I see all of the flight information" do
-    visit "/flights/#{@flight_1.id}"
+    visit flight_path(@flight_1.id)
     expect(page).to have_content("Flight Number: #{@flight_1.number}")
     expect(page).to have_content("Flight Date: #{@flight_1.date}")
     expect(page).to have_content("Flight Time: #{@flight_1.time}")
@@ -25,12 +25,13 @@ RSpec.describe 'Flight show page' do
   end
 
   it "I see the name of the airline this flight belongs to" do
-    visit "/flights/#{@flight_1.id}"
+    visit flight_path(@flight_1.id)
+    
     expect(page).to have_content(@delta.name)
   end
 
   it "I see the names of all the passengers on this flight" do
-    visit "/flights/#{@flight_1.id}"
+    visit flight_path(@flight_1.id)
 
     within ".passengers" do
       expect(page).to have_content(@jim.name)
@@ -40,7 +41,7 @@ RSpec.describe 'Flight show page' do
   end
 
   it "I do not see passengers who are not on this flight" do
-    visit "/flights/#{@flight_1.id}"
+    visit flight_path(@flight_1.id)
 
     within ".passengers" do
       expect(page).to_not have_content(@michael.name)
