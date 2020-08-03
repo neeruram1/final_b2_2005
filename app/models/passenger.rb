@@ -5,6 +5,6 @@ class Passenger < ApplicationRecord
   has_many :flights, through: :passenger_flights
 
   def flight_numbers
-    flights.select(:number).pluck(:number)
+    flights.select(:number).order(:number).pluck(:number)
   end
 end
