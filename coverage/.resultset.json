@@ -205,12 +205,27 @@
       "/Users/nirupamaram/turing/2module/final_b2_2005/config/routes.rb": {
         "lines": [
           1,
-          null,
+          1,
           null
         ]
       },
       "/Users/nirupamaram/turing/2module/final_b2_2005/app/helpers/application_helper.rb": {
         "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/airline.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/application_record.rb": {
+        "lines": [
+          1,
           1,
           null
         ]
@@ -229,15 +244,10 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/application_record.rb": {
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger.rb": {
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/airline.rb": {
-        "lines": [
           1,
           1,
           1,
@@ -251,18 +261,8 @@
           1,
           null
         ]
-      },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1596468536
+    "timestamp": 1596469228
   }
 }
