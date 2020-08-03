@@ -267,7 +267,7 @@
         "lines": [
           1,
           1,
-          null,
+          1,
           null,
           null
         ]
@@ -278,8 +278,17 @@
           1,
           null
         ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/flights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1596470803
+    "timestamp": 1596471076
   }
 }
