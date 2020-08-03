@@ -262,8 +262,24 @@
           1,
           null
         ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/passengers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1596470702
+    "timestamp": 1596470759
   }
 }
