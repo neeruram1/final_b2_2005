@@ -5,4 +5,8 @@ RSpec.describe Passenger, type: :model do
     it {should validate_presence_of :name}
     it {should validate_presence_of :age}
   end
+
+  describe 'Relationships' do
+    it {should have_many :passenger_flights}
+  end
 end
