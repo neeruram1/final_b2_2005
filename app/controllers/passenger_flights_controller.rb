@@ -1,5 +1,6 @@
 class PassengerFlightsController < ApplicationController
   def create
+    binding.pry
     flight = Flight.find_by_number(params[:flight_number])
 
     if flight.nil?

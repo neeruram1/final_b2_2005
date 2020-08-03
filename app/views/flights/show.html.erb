@@ -8,6 +8,8 @@
 
 <section class='passengers'>
   <h3>Passengers:</h3>
+  <h4>Adults on Flight: <%= @flight.adults_count %></h4>
+  <h4>Minors on Flight: <%= @flight.minors_count %></h4>
   <% @flight.passengers.each do |passenger| %>
   <p><%= passenger.name %></p>
   <% end %>

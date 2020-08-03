@@ -65,7 +65,23 @@ RSpec.describe 'Passenger show page' do
     end
 
     expect(current_path).to eq(passenger_path(@jim.id))
-    save_and_open_page
     expect(page).to have_content("Flight number can't be blank")
+  end
+
+  it "I can't add a duplicate flight" do
+    visit passenger_path(@jim.id)
+
+    within '.add-flight-form' do
+      fill_in 'Flight Number', with: @flight_4.number
+      click_on 'Add Flight'
+    end
+
+    within '.add-flight-form' do
+      fill_in 'Flight Number', with: @flight_4.number
+      click_on 'Add Flight'
+    end
+
+    expect(current_path).to eq(passenger_path(@jim.id))
+    expect(page).to have_content("This flight already exists")
   end
 end
