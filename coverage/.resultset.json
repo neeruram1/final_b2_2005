@@ -207,11 +207,27 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/nirupamaram/turing/2module/final_b2_2005/app/helpers/application_helper.rb": {
         "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/airline.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/application_record.rb": {
+        "lines": [
+          1,
           1,
           null
         ]
@@ -232,15 +248,10 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/application_record.rb": {
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger.rb": {
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/airline.rb": {
-        "lines": [
           1,
           1,
           1,
@@ -255,17 +266,41 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger.rb": {
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/passengers_controller.rb": {
         "lines": [
           1,
           1,
-          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/application_controller.rb": {
+        "lines": [
           1,
           1,
           null
         ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/flights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/passenger_flights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1596471303
+    "timestamp": 1596472309
   }
 }

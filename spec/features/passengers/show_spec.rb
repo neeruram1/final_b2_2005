@@ -7,7 +7,8 @@ RSpec.describe 'Passenger show page' do
     @virgin = Airline.create(name: "Virgin Atlantic")
     @flight_1 = @delta.flights.create(number: 1, date: "08/03/2020", time: "5:00 PM", departure_city: "Denver", arrival_city: "Boston")
     @flight_2 = @jet_blue.flights.create(number: 2, date: "08/04/2020", time: "7:00 AM", departure_city: "Denver", arrival_city: "New York")
-    @flight_3 = @virgin.flights.create(number: 4, date: "08/08/2020", time: "4:00 PM", departure_city: "Los Angles", arrival_city: "Toronto")
+    @flight_3 = @virgin.flights.create(number: 4, date: "08/08/2020", time: "4:00 PM", departure_city: "Los Angeles", arrival_city: "Toronto")
+    @flight_4 = @delta.flights.create(number: 3, date: "08/16/2020", time: "9:00 AM", departure_city: "London", arrival_city: "Tokyo")
     @jim = Passenger.create(name: "Jim Halpert", age: 30)
 
     PassengerFlight.create(flight: @flight_1, passenger: @jim)
@@ -40,18 +41,19 @@ RSpec.describe 'Passenger show page' do
   end
 
   it "I see a form to add a flight" do
+    visit passenger_path(@jim.id)
 
+    within '.add-flight-form' do
+      expect(page).to have_content("Add a Flight For #{@jim.name}")
+      fill_in 'Flight Number', with: @flight_4.number
+      click_on 'Add Flight'
+    end
+
+    expect(current_path).to eq(passenger_path(@jim.id))
+
+    within ".flight-#{@flight_4.id}" do
+      expect(page).to have_content("Flight Number: #{@flight_4.number}")
+      expect(page).to have_link(@flight_4.number)
+    end
   end
 end
-
-
-
-# User Story 3, Assign a Passenger to a Flight
-# ​
-# As a visitor
-# When I visit a passengers show page
-# I see a form to add a flight
-# When I fill in the form with a flight number (assuming these will always be unique)
-# And click submit
-# I'm taken back to the passengers show page
-# And I can see the flight number of the flight I just added
