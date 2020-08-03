@@ -216,8 +216,16 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/airline.rb": {
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/flight.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -231,14 +239,16 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/flight.rb": {
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/airline.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          1,
-          1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger_flight.rb": {
+        "lines": [
           1,
           1,
           1,
@@ -254,41 +264,8 @@
           1,
           null
         ]
-      },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger_flight.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/passengers_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/nirupamaram/turing/2module/final_b2_2005/app/controllers/flights_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1596471076
+    "timestamp": 1596471303
   }
 }
