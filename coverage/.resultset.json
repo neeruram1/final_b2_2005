@@ -218,6 +218,8 @@
       "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger_flight.rb": {
         "lines": [
           1,
+          1,
+          1,
           null
         ]
       },
@@ -227,8 +229,29 @@
           1,
           null
         ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/passenger.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/final_b2_2005/app/models/flight.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1596468248
+    "timestamp": 1596468355
   }
 }
