@@ -26,23 +26,13 @@ RSpec.describe 'Flight show page' do
     expect(page).to have_content(@delta.name)
   end
 
-  xit "I see the names of all the passengers on this flight" do
-
+  it "I see the names of all the passengers on this flight" do
+    visit "/flights/#{@flight_1.id}"
+    
+    within ".passengers" do
+      expect(page).to have_content(@jim.name)
+      expect(page).to have_content(@pam.name)
+      expect(page).to have_content(@stanley.name)
+    end
   end
 end
-
-
-
-
-
-
-# As a visitor
-# When I visit a flights show page
-# I see all of that flights information including:
-#   - number
-#   - date
-#   - time
-#   - departure city
-#   - arrival city
-# And I see the name of the airline this flight belongs to
-# And I see the names of all of the passengers on this flight
