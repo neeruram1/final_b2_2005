@@ -56,4 +56,16 @@ RSpec.describe 'Passenger show page' do
       expect(page).to have_link(@flight_4.number)
     end
   end
+
+  it "I can't add a flight with incomplete information" do
+    visit passenger_path(@jim.id)
+
+    within '.add-flight-form' do
+      click_on 'Add Flight'
+    end
+
+    expect(current_path).to eq(passenger_path(@jim.id))
+    save_and_open_page
+    expect(page).to have_content("Flight number can't be blank")
+  end
 end
